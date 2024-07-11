@@ -1,0 +1,26 @@
+/* Style for the container div */
+div {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+/* Style for the h1 inside the div */
+h1 {
+    color: #fff;
+    text-align: left;
+    font-size: 24px;
+}
+
+/* Style for the pre tag inside the div */
+pre {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.5;
+}

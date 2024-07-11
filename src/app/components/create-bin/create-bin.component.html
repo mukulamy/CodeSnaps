@@ -1,0 +1,15 @@
+<form [formGroup]="binForm">
+    <h3>Create Code Snippet</h3>
+    <div class="form-group">
+        <label for="title">Enter the title: </label>
+        <input type="text" class="form-control" id="title" 
+            placeholder="Enter title" [formControl]="title">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="code">Code: </label>
+        <textarea type="text" class="form-control" id="code" placeholder="Code here" [formControl]="code"></textarea>
+    </div>  
+    <button type="submit" [disabled]="!binForm.valid" (click)="save()" class="btn btn-primary">Create</button>
+    <button type="reset" class="btn btn-primary">Reset</button>
+</form>

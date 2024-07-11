@@ -1,0 +1,13 @@
+<div>
+   <h1>Code Snippets</h1>
+   <p>Login to upload your own code snippets</p>
+    <ul>
+        @if(items.length==0){
+            <li>No Data</li>
+        }@else{
+        @for(item of items; track item.id){
+            <a [routerLink]="['/snippet', item.id]"><li>{{item.title}}</li></a>
+        }
+    }
+    </ul>
+</div>
